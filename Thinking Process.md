@@ -1,4 +1,4 @@
-### 🛠 Design Decisions: Why Bubble Sort?
+###  Design Decisions: Why Bubble Sort?
 While production systems typically utilize **Dual-Pivot Quicksort** (`Arrays.sort()`), this project intentionally implements a custom **Bubble Sort** layout to:
 
 *   **Isolate Swapping Overhead:** It exposes structural inefficiencies in loop control and conditional code blocks, providing distinct benchmarking variances for analysis.
@@ -6,7 +6,7 @@ While production systems typically utilize **Dual-Pivot Quicksort** (`Arrays.sor
 
 ---
 
-## 📊 Benchmarking & Efficiency Analysis
+##  Benchmarking & Efficiency Analysis
 Comparative execution logs based on internal dataset testing profiles:
 
 | Dataset Size (Items) | Bubble Sort Execution Time | Algorithmic Scaling Curve |
@@ -19,7 +19,7 @@ Comparative execution logs based on internal dataset testing profiles:
 
 ---
 
-## 🧪 How to Stress Test (Chaos Scenario)
+##  How to Stress Test (Chaos Scenario)
 Most systems are documented only on how they run; this tool is built to show how it handles **automated data degradation patterns**.
 
 Run this shell script within your Git Bash terminal to inflate the input layer with thousands of chaotic records and monitor engine degradation in real-time:
@@ -31,7 +31,7 @@ for i in {1..5000}; do echo "User_$RANDOM" >> input_names.txt; done
 # Execute compilation and run the processing engine to measure the impact
 mvn compile exec:java
 
-###⚙️ Professional CI/CD Integration
+##⚙️ Professional CI/CD Integration
 This application integrates seamlessly into modern **DevOps workflows** via an internal automated tracking design:
 
 *   **Continuous Testing:** Code pushes automatically target the **JUnit assertion architecture** to maintain engine purity and prevent logic regression during development cycles.
